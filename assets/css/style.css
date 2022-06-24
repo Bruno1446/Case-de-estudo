@@ -1,0 +1,181 @@
+/* Variáveis */
+:root {
+    --primary-color: #4158D0;
+    --secondary-color: #C850C0;
+    --thirdiary-color: #FFCC70;
+}
+
+/* Reseta totos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Define as propriedades do Body */
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(43deg, var(--primary-color), var(--secondary-color), var(--thirdiary-color));
+}
+
+/* container */
+#container {
+    width: 26.6rem;
+    height: 25rem;
+    margin: 6.5rem auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem #ddd;
+}
+
+
+
+/* Formata o Titulo */
+.titulo {
+    background: linear-gradient(43deg, var(--primary-color), var(--secondary-color), var(--thirdiary-color));
+    color: #ffffff;
+    height: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Formata a Label */
+form label {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/* Formata os Inputs */
+.inputBox {
+    font-size: 1rem;
+    width: 20rem;
+    height: 2rem;
+    border: 0.1rem solid var(--primary-color);
+    padding: 0 0.3rem;
+}
+
+.inputBox:focus {
+    border: 0.1rem solid var(--secondary-color);
+    outline: none;
+}
+
+/* Define a margem dos inputs e label */
+#campos {
+    margin: 1.5rem;
+}
+
+.camposInput {
+    margin: 1rem;
+}
+
+/* Formata o Botão */
+#campoBotao {
+    height: 5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 0;
+}
+
+#botao {
+    height: 3rem;
+    margin-top: 1rem;
+    padding: 0 2.5rem 0 2.5rem;
+    color: #ffffff;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#botao:hover {
+    border: 0.2rem solid var(--secondary-color);
+    background-color: #ffffff;
+    color: var(--secondary-color);
+}
+
+/* Responsivo */
+@media only screen and (max-width: 912px) {
+
+    #container {
+        width: 50%;
+        margin: 15rem auto;
+    }
+
+    .titulo {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    #container {
+        width: 70%;
+        margin: 20rem auto;
+    }
+
+    .form {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+
+    #container {
+        width: 100%;
+        margin: 20rem auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .camposInput {
+        margin: auto 0;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    #container {
+        width: 100%;
+        margin: 20rem auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .camposInput {
+        width: 50%;
+    }
+}
+
+/* Telas 4k */
+@media only screen and (min-width: 4000px) {
+
+    #container {
+        width: 30rem;
+        margin: 10rem auto;
+    }
+
+    .form {
+        width: 30rem;
+    }
+
+    .campos {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+}
